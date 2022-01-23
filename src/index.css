@@ -7,6 +7,11 @@
   font-weight: 700;
 }
 
+#dl {
+  font-family: "Amatic SC", cursive;
+  font-size: 43px;
+}
+
 .prose img {
   margin-left: auto;
   margin-right: auto;
