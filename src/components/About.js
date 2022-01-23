@@ -20,6 +20,7 @@ export default function About() {
           "authorImage": image.asset->url
       }`
       )
+
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
   }, []);
@@ -43,6 +44,8 @@ export default function About() {
             </h1>
             <p className="text-green-200 text-lg">{author.bio}</p>
           </div>
+          <pre>{JSON.stringify(author)}</pre>
+
         </section>
       </div>
     </main>

@@ -23,6 +23,13 @@ export default function NavBar() {
             Blog Posts
           </NavLink>
           <NavLink
+            to="/cv"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            activeClassName="text-red-100 bg-red-700"
+          >
+            cv
+          </NavLink>
+          <NavLink
             to="/project"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
