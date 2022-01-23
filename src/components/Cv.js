@@ -3,7 +3,6 @@ import sanityClient from "../client.js";
 
 
 const Cv = () => {
-      const history = useHistory()
       const [cv, setCv] = useState(null);
       useEffect(() => {
             sanityClient
