@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
-import plumeria from "../bg.png";
+import logo from "../bg.png";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -29,22 +29,21 @@ export default function About() {
 
   return (
     <main className="relative">
-      <img src={plumeria} alt="Plumeria Flower" className="absolute w-full" />
+      <img src={logo} alt="logo" className="absolute bg-cover object-cover w-full h-full" />
       <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+        <section className="bg-red-800 rounded-lg shadow-2xl lg:flex p-20">
           <img
             src={urlFor(author.authorImage).url()}
-            className="rounded w-100 h-100 lg:w-64 lg:h-64 mr-8"
-            alt="Kapehe"
+            className="rounded w-100 h-100 lg:w-64 lg:h-64 mr-8" alt="img"
+
           />
           <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-green-300 mb-4">
+            <h1 className="cursive text-6xl text-black mb-4">
               Hey there. I'm{" "}
-              <span className="text-green-100">{author.name}</span>
+              <span className="text-black">{author.name}</span>
             </h1>
-            <p className="text-green-200 text-lg">{author.bio}</p>
+            <p className="text-white text-lg">{author.bio}</p>
           </div>
-          <pre>{JSON.stringify(author)}</pre>
 
         </section>
       </div>
