@@ -1,5 +1,5 @@
 export default {
-      name: 'curriculum',
+      name: 'cv',
       title: 'Curriculum',
       type: 'document',
       fields: [
@@ -11,7 +11,10 @@ export default {
             {
                   title: 'Cv',
                   name: 'cv',
-                  type: 'file',
+                  type: 'image',
+                  options: {
+                        hotspot: true,
+                  },
 
             },
 

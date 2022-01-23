@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import SinglePost from "./components/SinglePost";
@@ -9,7 +9,7 @@ import Cv from './components/Cv'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <NavBar />
       <Switch>
         <Route component={Home} path='/' exact />
@@ -17,7 +17,7 @@ function App() {
         <Route component={SinglePost} path='/post/:slug' />
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
-        <Route component={Cv} path='/cv' />
+        <Route component={Cv} path='/cv' exact />
       </Switch>
     </BrowserRouter>
   )
