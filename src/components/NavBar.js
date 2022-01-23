@@ -11,40 +11,40 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 hover:scale-150 text-4xl font-bold cursive tracking-widest"
+            className="inflex-flex items-center py-6 px-2 mr-3 text-red-100 hover:text-green-800 hover:scale-150 text-4xl font-bold cursive tracking-widest"
           >
             Home
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/cv"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
             cv
           </NavLink>
           <NavLink
             to="/project"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
             About Me!
           </NavLink>
         </nav>
-        <div className="inline-grid grid-cols-1 gap-4 px-4 my-4">
+        <div className="inline-grid grid-cols-1 gap-4  my-2">
           <SocialIcon
             url="https://twitter.com/Lloret821"
             className="mr-4"
