@@ -10,22 +10,22 @@ export default function NavBar() {
           <NavLink
             to="/"
             exact
-            activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-2 mr-3 text-red-100 hover:text-green-800 hover:scale-150 text-4xl font-bold cursive tracking-widest"
+            activeClassName="text-black"
+            className="inflex-flex items-center py-6 px-2 mr-3 text-white hover:text-black hover:scale-150 text-4xl font-bold cursive tracking-widest"
           >
             Home
           </NavLink>
           <NavLink
             to="/project"
-            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-black"
+            activeClassName="text-black bg-red-700"
           >
             Projects
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-black"
+            activeClassName="text-black bg-red-700"
           >
             Blog
           </NavLink>
@@ -33,15 +33,15 @@ export default function NavBar() {
 
           <NavLink
             to="/about"
-            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-black"
+            activeClassName="text-black bg-red-700"
           >
             About
           </NavLink>
           <NavLink
             to="/cv"
-            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-green-800"
-            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-2 my-6 rounded text-red-200 hover:text-black"
+            activeClassName="text-black bg-red-700"
           >
             CV
           </NavLink>
