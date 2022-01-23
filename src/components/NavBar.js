@@ -44,27 +44,27 @@ export default function NavBar() {
             About Me!
           </NavLink>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-grid grid-cols-1 gap-4 px-4 my-4">
           <SocialIcon
             url="https://twitter.com/Lloret821"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
-            style={{ height: 35, width: 35 }}
+            style={{ height: 15, width: 15 }}
           />
           <SocialIcon
             url="https://www.linkedin.com/in/lloret82/"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
-            style={{ height: 35, width: 35 }}
+            style={{ height: 15, width: 15 }}
           />
           <SocialIcon
             url="https://github.com/lloret82"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
-            style={{ height: 35, width: 35 }}
+            style={{ height: 15, width: 15 }}
           />
         </div>
       </div>
