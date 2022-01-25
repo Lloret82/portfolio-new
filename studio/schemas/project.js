@@ -38,9 +38,23 @@ export default {
                   name: 'link',
                   type: 'url',
             },
+            {
+                  name: 'image',
+                  title: 'Image',
+                  type: 'image',
+                  options: {
+                        hotspot: true,
+                  },
+            },
 
 
-      ]
+      ],
+      preview: {
+            select: {
+                  title: 'name',
+                  media: 'image',
+            },
+      },
 }
 
 

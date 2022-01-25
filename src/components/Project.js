@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 
+
+
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
 
@@ -10,11 +12,11 @@ export default function Project() {
         `*[_type == "project"]{
           title,
           date,
-          place,
           description,
           projectType,
           link,
-          tags
+          tags,
+          
       }`
       )
       .then((data) => setProjectData(data))
@@ -22,16 +24,16 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-red-300 min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+        <h2 className="text-lg text-gray-100 flex justify-center mb-12">
           Welcome to my projects page!
         </h2>
         <section className="grid grid-cols-1 gap-8 ">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16 hover:scale-125 ">
+              <article className="relative rounded-lg shadow-xl bg-red-200 p-16 hover:scale-125">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700 text-center">
                   <a
                     href={project.link}
@@ -41,6 +43,7 @@ export default function Project() {
                   >
                     {project.title}
                   </a>
+
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4 text-center">
                   <span>
@@ -66,7 +69,9 @@ export default function Project() {
                       👉
                     </span>
                   </a>
+                  {/* <pre>{JSON.stringify(project)}</pre> */}
                 </div>
+
               </article>
             ))}
         </section>
